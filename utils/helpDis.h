@@ -3,7 +3,7 @@
 #include <vector>
 using namespace std;
 
-void helpFunc()
+void helpFunc(vector<string> syntax)
 {
     int helpChoice;
     cout << "Bilobe a Programming Language made simple to Code" << endl;
@@ -11,9 +11,14 @@ void helpFunc()
     cout << endl;
     cout << "1. List of available Syntax" << endl;
     cout << "2. Simple Examples" << endl;
+    cout << "Enter your choice: ";
+    cin >> helpChoice;
 
-    // if (helpChoice == 1)
-    // {
-    //     cout <<
-    // }
+    if (helpChoice == 1)
+    {
+        for (int i = 0; i < syntax.size(); i++)
+        {
+            cout << syntax[i] << "\t\t";
+        }
+    }
 }

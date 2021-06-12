@@ -2,12 +2,12 @@
 #include <string>
 #include <vector>
 #include "utils/customFunc.h"
+#include "utils/helpDis.h"
 using namespace std;
 
 int main()
 {
     string code, display;
-    // available syntax
     vector<string> syntax{"lnp"};
 
     while (true)
@@ -26,6 +26,12 @@ int main()
                 display = lnp(code);
                 cout << display << endl;
             }
+        }
+
+        else if (code == "help")
+        {
+            helpFunc(syntax);
+            continue;
         }
         else
         {
