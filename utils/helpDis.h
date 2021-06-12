@@ -18,7 +18,7 @@ void helpFunc(vector<string> syntax)
     {
         for (auto i = 0; i < syntax.size(); i++)
         {
-            cout << syntax[i] << "\t\t";
+            cout << syntax[i] << endl;
         }
     }
 }
