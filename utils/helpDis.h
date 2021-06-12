@@ -16,7 +16,7 @@ void helpFunc(vector<string> syntax)
 
     if (helpChoice == 1)
     {
-        for (int i = 0; i < syntax.size(); i++)
+        for (auto i = 0; i < syntax.size(); i++)
         {
             cout << syntax[i] << "\t\t";
         }
