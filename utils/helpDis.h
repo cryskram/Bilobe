@@ -1,24 +1,27 @@
 #include <iostream>
 #include <string>
 #include <vector>
-using namespace std;
 
-void helpFunc(vector<string> syntax)
+void syntaxRun(std::vector<std::string> input)
 {
-    int helpChoice;
-    cout << "Bilobe a Programming Language made simple to Code" << endl;
-    cout << "-------------------------------------------------" << endl;
-    cout << endl;
-    cout << "1. List of available Syntax" << endl;
-    cout << "2. Simple Examples" << endl;
-    cout << "Enter your choice: ";
-    cin >> helpChoice;
+    int synLen = input.size();
 
-    if (helpChoice == 1)
+    for (int i = 0; i < synLen; i++)
     {
-        for (auto i = 0; i < syntax.size(); i++)
-        {
-            cout << syntax[i] << endl;
-        }
+        std::cout << input[i] << "\t";
     }
+    std::cout << "\n";
+    std::cout << dashes << std::endl;
+}
+
+void examplesRun(std::vector<std::string> input)
+{
+    int exLen = input.size();
+
+    for (int i = 0; i < exLen; i++)
+    {
+        std::cout << input[i] << std::endl;
+    }
+    std::cout << "\n";
+    std::cout << dashes << std::endl;
 }
