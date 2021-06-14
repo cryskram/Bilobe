@@ -4,7 +4,7 @@
 
 `git clone https://github.com/GNVageesh/Bilobe.git` <br>
 `cd Bilobe` <br>
-`sudo make build`
+`sudo make install`
 
 ## Usage
 

@@ -1,4 +1,4 @@
-build:
+install:
 	git pull
 	g++ -Wall -std=c++11 *.cpp utils/*.h -o bilobe
 	cp bilobe /usr/bin/
@@ -6,3 +6,4 @@ build:
 
 clean:
 	rm -f bilobe
+	sudo rm -f /usr/bin/bilobe
