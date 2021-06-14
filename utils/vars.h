@@ -4,7 +4,7 @@
 /* Global Vars */
 
 // Help Text
-std::string introText = "Bilobe[1.0.0] :-: A Programming Language Made Simple To Code\nType !syn or !eg to get the available syntax or examples in Bilobe[1.0.0]";
+std::string introText = "Bilobe[1.1.0] :-: A Programming Language Made Simple To Code\nType !syn or !eg to get the available syntax or examples in Bilobe[1.0.0]";
 std::string dashes = "-------------------------------------------------------------------------";
 
 // Components of an input

@@ -13,10 +13,17 @@ Once the installation and building is done follow the steps:
 `bilobe`
 
 
-## Syntax Available right now
+## Grammar Available right now
 
-1. Printing - `lnp("Hello World")`
+1. Printing - `lnp("Hello World")` -> Hello World
+2. String Length - `lens("Hello")` -> 5
+3. Number Length - `leni(793719)` -> 6
+4. Exiting - `exit(bi)` -> Exits bilobe
 
+## Bilobe[1.1.0] commands
+
+ - `!syn` --> Provides the available Syntax in Bilobe
+ - `!eg` --> Provides the examples for Bilobe Grammar
 
 
 
