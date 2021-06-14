@@ -2,9 +2,10 @@
 #include <vector>
 
 /* Global Vars */
+std::string version = "1.1.0";
 
 // Help Text
-std::string introText = "Bilobe[1.1.0] :-: A Programming Language Made Simple To Code\nType !syn or !eg to get the available syntax or examples in Bilobe[1.0.0]";
+std::string introText = "Bilobe[" + version + "] :-: A Programming Language Made Simple To Code\nType !syn or !eg to get the available syntax or examples in Bilobe[" + version + "]";
 std::string dashes = "-------------------------------------------------------------------------";
 
 // Components of an input
@@ -23,8 +24,8 @@ std::string lenIntSuff = ")";
 
 // Errors
 std::string printNotEnd = "[lnp() Syntax Voilation...]\nThe lnp() syntax should end with \")";
-std::string noSyntax = "No Such Syntax in Bilobe[1.0.0]\nPlease go through the Bilobe Documentation";
-std::string exitText = "Exiting Bilobe[1.0.0]...";
+std::string noSyntax = "No Such Syntax in Bilobe" + version + "\nPlease go through the Bilobe Documentation";
+std::string exitText = "Exiting Bilobe" + version + "...";
 std::string whiteSError = "[Whitespace Error]...\nPlease remove the whitespaces at the end of the code";
 std::string missingCloseBrac = "[Unclosed Error]...\nPlease add a closing bracket \") or ')', according to the function, at the end";
 
