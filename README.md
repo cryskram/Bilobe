@@ -1,5 +1,10 @@
 # **Bilobe**
 
+## Requirements
+ - Any C++ compiler(MinGW/GCC, Dev C++, CLang or Visual C++)
+ - `Make` installed
+ - Any OS With the above two prerequisites
+
 ## Installation
 
 `git clone https://github.com/GNVageesh/Bilobe.git` <br>
