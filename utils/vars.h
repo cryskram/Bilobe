@@ -24,8 +24,8 @@ std::string lenIntSuff = ")";
 
 // Errors
 std::string printNotEnd = "[lnp() Syntax Voilation...]\nThe lnp() syntax should end with \")";
-std::string noSyntax = "No Such Syntax in Bilobe" + version + "\nPlease go through the Bilobe Documentation";
-std::string exitText = "Exiting Bilobe" + version + "...";
+std::string noSyntax = "No Such Syntax in Bilobe[" + version + "]\nPlease go through the Bilobe Documentation";
+std::string exitText = "Exiting Bilobe[" + version + "]...";
 std::string whiteSError = "[Whitespace Error]...\nPlease remove the whitespaces at the end of the code";
 std::string missingCloseBrac = "[Unclosed Error]...\nPlease add a closing bracket \") or ')', according to the function, at the end";
 
