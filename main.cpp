@@ -1,13 +1,11 @@
 #include <iostream>
+#include <string>
 #include <vector>
 #include "utils/customFunc.h"
-#include "utils/helpDis.h"
 
 int main()
 {
     std::string code, display;
-    int len = code.length();
-    int num;
 
     std::cout << introText << "\n"
               << dashes << std::endl;

@@ -1,6 +1,5 @@
 #include <iostream>
-#include <string>
-#include <vector>
+#include "vars.h"
 
 void syntaxRun(std::vector<std::string> input)
 {

@@ -1,6 +1,5 @@
 #include <iostream>
-#include <algorithm>
-#include "vars.h"
+#include "helpDis.h"
 
 bool start_with(std::string main, std::string part)
 {

@@ -3,10 +3,6 @@
 
 /* Global Vars */
 
-//Syntax vector
-std::vector<std::string> syntax{"lnp()", "exit()", "lens()", "leni()"};
-std::vector<std::string> examples{lnpEx, exitEx, lensEx, leniEx};
-
 // Help Text
 std::string introText = "Bilobe[1.0.0] :-: A Programming Language Made Simple To Code\nType !syn or !eg to get the available syntax or examples in Bilobe[1.0.0]";
 std::string dashes = "-------------------------------------------------------------------------";
@@ -40,3 +36,7 @@ std::string lnpEx = "lnp() - lnp(\"Hello Bilobe\") -> Hello Bilobe";
 std::string exitEx = "exit() - exit(bi) -> Exits Bilobe";
 std::string lensEx = "lens() - lens(\"Bilobe\") -> 6";
 std::string leniEx = "leni() - leni(1234) -> 4";
+
+//Syntax vector
+std::vector<std::string> syntax{"lnp()", "exit()", "lens()", "leni()"};
+std::vector<std::string> examples{lnpEx, exitEx, lensEx, leniEx};
