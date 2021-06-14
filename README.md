@@ -3,7 +3,9 @@
 ## Requirements
  - Any C++ compiler(MinGW/GCC, Dev C++, CLang or Visual C++)
  - `Make` installed
- - Any OS With the above two prerequisites
+ - Any OS
+ - If Windows... You might want to use the WSL to enjoy the full of Bilobe
+ - Unix Based system require nothing more than `sudo apt install build-essential` to get all the necessay tools
 
 ## Installation
 
@@ -29,6 +31,10 @@ Once the installation and building is done follow the steps:
 
  - `!syn` --> Provides the available Syntax in Bilobe
  - `!eg` --> Provides the examples for Bilobe Grammar
+
+## Uninstallation
+
+Run `sudo make uninstall` to remove Bilobe from your system
 
 
 
