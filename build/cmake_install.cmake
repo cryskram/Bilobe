@@ -1,4 +1,4 @@
-# Install script for directory: /home/vaageesh/Documents/Bilobe
+# Install script for directory: /mnt/c/Users/vagee/Documents/Bilobe
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -37,11 +37,6 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-# Set default install directory permissions.
-if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/bin/objdump")
-endif()
-
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}/usr/bin/bilobe" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}/usr/bin/bilobe")
@@ -57,7 +52,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/bin" TYPE EXECUTABLE FILES "/home/vaageesh/Documents/Bilobe/build/bilobe")
+file(INSTALL DESTINATION "/usr/bin" TYPE EXECUTABLE FILES "/mnt/c/Users/vagee/Documents/Bilobe/build/bilobe")
   if(EXISTS "$ENV{DESTDIR}/usr/bin/bilobe" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}/usr/bin/bilobe")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -74,5 +69,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/vaageesh/Documents/Bilobe/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/mnt/c/Users/vagee/Documents/Bilobe/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

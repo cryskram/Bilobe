@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/vaageesh/Documents/Bilobe/main.cpp" "/home/vaageesh/Documents/Bilobe/build/CMakeFiles/bilobe.dir/main.cpp.o"
+  "/mnt/c/Users/vagee/Documents/Bilobe/main.cpp" "/mnt/c/Users/vagee/Documents/Bilobe/build/CMakeFiles/bilobe.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
