@@ -1,5 +1,5 @@
 install:
-	g++ main.cpp *.h -o bilobe
+	g++ main.cpp utils/*.h -o bilobe
 	mv bilobe /usr/bin/
 	echo "Successfully installed Bilobe"
 
