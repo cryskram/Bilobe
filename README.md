@@ -11,7 +11,7 @@
 ## Installation
 
 `git clone https://github.com/GNVageesh/Bilobe.git` <br>
-`cd Bilobe/build` <br>
+`cd Bilobe` <br>
 `sudo make install`
 
 > **_This will install Bilobe globally on your system_**
