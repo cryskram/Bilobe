@@ -1,9 +1,15 @@
 install:
-	git pull --rebase
-	echo "Installing Bilobe..."
-	g++ -Wall main.cpp *.h -o bilobe
-	sudo cp bilobe /usr/bin/
+	g++ main.cpp utils/*.h -o bilobe
+	echo "Successfully installed Bilobe onto your system"
+	cp bilobe /usr/bin/
 
-remove:
-	rm -rf /usr/bin/bilobe
+uninstall:
 	rm -rf bilobe
+	rm -rf /usr/bin/bilobe
+
+update:
+	git pull --rebase
+	g++ main.cpp utils/*.h -o bilobe
+	rm -rf /usr/bin/bilobe
+	echo "Successfully reinstall Bilobe onto your system"
+	cp bilobe /usr/bin/
