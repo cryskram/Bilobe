@@ -14,7 +14,7 @@ CostDataFile:
 Site: kali
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
-BuildName: Linux-clang++-11
+BuildName: Linux-c++
 
 # Subprojects
 LabelsForSubprojects: 
@@ -62,8 +62,8 @@ UpdateOptions:
 UpdateType: git
 
 # Compiler info
-Compiler: /bin/clang++-11
-CompilerVersion: 11.0.1
+Compiler: /usr/bin/c++
+CompilerVersion: 10.2.1
 
 # Dynamic analysis (MemCheck)
 PurifyCommand: 

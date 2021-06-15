@@ -1,1 +1,1 @@
-/bin/clang++-11 -rdynamic CMakeFiles/bilobe.dir/main.cpp.o -o bilobe 
+/usr/bin/c++ -rdynamic CMakeFiles/bilobe.dir/main.cpp.o -o bilobe 

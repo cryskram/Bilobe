@@ -39,7 +39,7 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/bin/objdump")
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -61,7 +61,7 @@ file(INSTALL DESTINATION "/usr/bin" TYPE EXECUTABLE FILES "/home/vaageesh/Docume
   if(EXISTS "$ENV{DESTDIR}/usr/bin/bilobe" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}/usr/bin/bilobe")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/bin/strip" "$ENV{DESTDIR}/usr/bin/bilobe")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/usr/bin/bilobe")
     endif()
   endif()
 endif()
