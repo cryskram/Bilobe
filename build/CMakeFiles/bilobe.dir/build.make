@@ -79,15 +79,15 @@ include CMakeFiles/bilobe.dir/flags.make
 CMakeFiles/bilobe.dir/main.cpp.o: CMakeFiles/bilobe.dir/flags.make
 CMakeFiles/bilobe.dir/main.cpp.o: ../main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vaageesh/Documents/Bilobe/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/bilobe.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/bilobe.dir/main.cpp.o -c /home/vaageesh/Documents/Bilobe/main.cpp
+	/bin/clang++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/bilobe.dir/main.cpp.o -c /home/vaageesh/Documents/Bilobe/main.cpp
 
 CMakeFiles/bilobe.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bilobe.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vaageesh/Documents/Bilobe/main.cpp > CMakeFiles/bilobe.dir/main.cpp.i
+	/bin/clang++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vaageesh/Documents/Bilobe/main.cpp > CMakeFiles/bilobe.dir/main.cpp.i
 
 CMakeFiles/bilobe.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bilobe.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vaageesh/Documents/Bilobe/main.cpp -o CMakeFiles/bilobe.dir/main.cpp.s
+	/bin/clang++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vaageesh/Documents/Bilobe/main.cpp -o CMakeFiles/bilobe.dir/main.cpp.s
 
 # Object files for target bilobe
 bilobe_OBJECTS = \
