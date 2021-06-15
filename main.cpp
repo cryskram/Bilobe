@@ -43,6 +43,11 @@ int main()
             std::cout << lenIntLength << std::endl;
         }
 
+        else if (start_with(code, comment) || start_with(code, (comment + comment)))
+        {
+            continue;
+        }
+
         else if (code == " " || code == "")
         {
             continue;

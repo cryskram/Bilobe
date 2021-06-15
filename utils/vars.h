@@ -2,7 +2,7 @@
 #include <vector>
 
 /* Global Vars */
-std::string version = "1.1.0";
+std::string version = "1.2.0";
 
 // Help Text
 std::string introText = "Bilobe[" + version + "] :-: A Programming Language Made Simple To Code\nType !syn or !eg to get the available syntax or examples in Bilobe[" + version + "]";
@@ -21,6 +21,7 @@ std::string lenStringSuff = "\")";
 std::string lenInt = "leni";
 std::string lenIntPre = "leni(";
 std::string lenIntSuff = ")";
+std::string comment = "#";
 
 // Errors
 std::string printNotEnd = "[lnp() Syntax Voilation...]\nThe lnp() syntax should end with \")";
@@ -33,11 +34,12 @@ std::string missingCloseBrac = "[Unclosed Error]...\nPlease add a closing bracke
 std::string isLen = "Did you mean leni() or lens()...";
 
 // Examples Codes for !usage
-std::string lnpEx = "lnp() - lnp(\"Hello Bilobe\") -> Hello Bilobe";
-std::string exitEx = "exit() - exit(bi) -> Exits Bilobe";
-std::string lensEx = "lens() - lens(\"Bilobe\") -> 6";
-std::string leniEx = "leni() - leni(1234) -> 4";
+std::string lnpEx = "lnp() - lnp(\"Hello Bilobe\") -> 'Hello Bilobe'";
+std::string exitEx = "exit() - exit(bi) => Exits Bilobe";
+std::string lensEx = "lens() - lens(\"Bilobe\") -> '6'";
+std::string leniEx = "leni() - leni(1234) -> '4'";
+std::string commentEx = "# - # I am a Comment => Anything that starts with '#' is a comment";
 
 //Syntax vector
-std::vector<std::string> syntax{"lnp()", "exit()", "lens()", "leni()"};
-std::vector<std::string> examples{lnpEx, exitEx, lensEx, leniEx};
+std::vector<std::string> syntax{"lnp()", "exit()", "lens()", "leni()", "#"};
+std::vector<std::string> examples{lnpEx, exitEx, lensEx, leniEx, commentEx};
