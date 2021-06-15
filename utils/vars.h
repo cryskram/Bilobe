@@ -9,7 +9,7 @@ std::string introText = "Bilobe[" + version + "] :-: A Programming Language Made
 std::string dashes = "-------------------------------------------------------------------------";
 
 // Components of an input
-std::string lineDis = ">>> ";
+std::string lineDis = ":--: ";
 std::string printPrefix = "lnp(\"";
 std::string printSuffix = "\")";
 std::string helpText = "!syn";
