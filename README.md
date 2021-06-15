@@ -36,9 +36,8 @@ Once the installation and building is done follow the steps:
  - `!syn` --> Provides the available Syntax in Bilobe
  - `!eg` --> Provides the examples for Bilobe Grammar
 
-## Uninstallation
 
-Run `sudo make uninstall` to remove Bilobe from your system
+## Happy Coding😄
 
 
 
