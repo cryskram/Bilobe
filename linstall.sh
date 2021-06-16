@@ -36,9 +36,11 @@ function buildBilobe() {
 if checkPKGM apt-get
 then
     bilobeAPT
+    buildBilobe
 elif checkPKGM pacman
 then
     bilobePAC
+    buildBilobe
 else
     echo "Need to implement the code for your OS..."
 fi
