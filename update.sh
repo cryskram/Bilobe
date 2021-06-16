@@ -63,9 +63,11 @@ then
     bilobePAC
     buildBilobe
 elif checkPKGM dnf
+then
     bilobeDnf
     buildBilobe
 elif checkPKGM yum
+then
     bilobeYum
     buildBilobe
 else
