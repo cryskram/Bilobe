@@ -1,8 +1,9 @@
-# **Bilobe[1.2.0]**
+# **Bilobe[1.3.0]**
 ### A New Programming Language Made To Be Simple, Fast And Efficient
 
-![A GIF On Bilobe](preview/bi.gif)
+![A GIF On Bilobe](preview/bi.gif)<br>
 
+![A preview of Bilobe](preview/bilobeTerminal1.png)
 ## Requirements
  - Any C++ compiler(MinGW/GCC, Dev C++, CLang or Visual C++).
  - `make` installed to build and install the project.
@@ -27,13 +28,17 @@ Once the installation and building is done follow the steps:
 
 ## Grammar Available right now
 
-1. Printing - `lnp("Hello World")` -> Hello World
-2. String Length - `lens("Hello")` -> 5
-3. Number Length - `leni(793719)` -> 6
-4. Exiting - `exit(bi)` -> Exits bilobe
-5. Comments - `# Simple Comment` -> Anything that starts with **#** is a comment
+| Function | Examples             | Result      | Description                          |
+| :------: | :------------------: | :---------: | :------------------:                 |
+| lnp()    | `lnp("I am Bilobe")` | I am Bilobe | Prints the text                      |
+| lens()   | `lens("Bilobe")`     | 6           | Prints the length of a String        |
+| leni()   | `lens(89243)`        | 5           | Prints the length of a number        |
+| exit()   | `exit(bi)`           |             | Exit Bilobe from the console         |
+| #        | `# This is a comment`|             | Commenting in Bilobe starts with a # |
+| Maths    | `(2+2)^2/2*2+2-2`    |16           | Basic Maths like a calculator        |
 
-## Bilobe[1.2.0] commands
+ 
+## Bilobe[1.3.0] commands
 
  - `!syn` --> Provides the available Syntax in Bilobe
  - `!eg` --> Provides the examples for Bilobe Grammar

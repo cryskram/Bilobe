@@ -23,12 +23,7 @@ int main()
 
         else if (code == helpText)
         {
-            syntaxRun(syntax);
-        }
-
-        else if (code == egText)
-        {
-            examplesRun(examples);
+            std::cout << helpVar << std::endl;
         }
 
         else if (start_with(code, lenStringPre) && end_with(code, lenStringSuff))
@@ -46,6 +41,12 @@ int main()
         else if (start_with(code, comment) || start_with(code, (comment + comment)))
         {
             continue;
+        }
+
+        else if (isNumber(code))
+        {
+            display = std::to_string(evaluate(code));
+            std::cout << display << std::endl;
         }
 
         else if (code == " " || code == "")

@@ -2,10 +2,10 @@
 #include <vector>
 
 /* Global Vars */
-std::string version = "1.2.0";
+std::string version = "1.3.0";
 
 // Help Text
-std::string introText = "Bilobe[" + version + "] :-: A Programming Language Made Simple To Code\nType !syn or !eg to get the available syntax or examples in Bilobe[" + version + "]";
+std::string introText = "Bilobe[" + version + "] :-: A Programming Language Made Simple To Code\nType !syn to get the available grammar in Bilobe[" + version + "]";
 std::string dashes = "-------------------------------------------------------------------------";
 
 // Components of an input
@@ -33,13 +33,13 @@ std::string missingCloseBrac = "[Unclosed Error]...\nPlease add a closing bracke
 // Suggestions
 std::string isLen = "Did you mean leni() or lens()...";
 
-// Examples Codes for !usage
-std::string lnpEx = "lnp() - lnp(\"Hello Bilobe\") -> 'Hello Bilobe'";
-std::string exitEx = "exit() - exit(bi) => Exits Bilobe";
-std::string lensEx = "lens() - lens(\"Bilobe\") -> '6'";
-std::string leniEx = "leni() - leni(1234) -> '4'";
-std::string commentEx = "# - # I am a Comment => Anything that starts with '#' is a comment";
-
-//Syntax vector
-std::vector<std::string> syntax{"lnp()", "exit()", "lens()", "leni()", "#"};
-std::vector<std::string> examples{lnpEx, exitEx, lensEx, leniEx, commentEx};
+// Help var
+std::string helpVar = "| Grammsrs |       Examples              |     Result      |            Description               |\n"
+                      "| -------- | ------------------------    | --------------- | ------------------------------------ |\n"
+                      "| lnp()    | lnp(\" I am Bilobe \")        |   I am Bilobe   | Prints the text                      |\n"
+                      "| lens()   | lens(\"Bilobe\")              |       6         | Prints the length of a String        |\n"
+                      "| leni()   | lens(89243)                 |       5         | Prints the length of a number        |\n"
+                      "| exit()   | exit(bi)                    |                 | Exit Bilobe from the console         |\n"
+                      "| #        | # This is a comment         |                 | Commenting in Bilobe starts with a # |\n"
+                      "| Maths    | (2+2)^2/2*2+2-2             |      16         | Basic Maths with BEDMAS Rules        |\n"
+                      "|-------------------------------------------------------------------------------------------------|\n";

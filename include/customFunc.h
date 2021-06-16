@@ -1,5 +1,6 @@
 #include <iostream>
-#include "helpDis.h"
+#include "calculations.h"
+#include "vars.h"
 
 bool start_with(std::string main, std::string part)
 {
@@ -49,4 +50,17 @@ int leni(std::string input)
     int mainOutLength = strLength - prefixLength - suffixLength;
     std::string output = input.substr(prefixLength, mainOutLength);
     return output.length();
+}
+
+bool isNumber(std::string s)
+{
+    for (int i = 0; i < s.length(); i++)
+    {
+        if (std::isdigit(s[i]) == true)
+        {
+            return true;
+        }
+    }
+
+    return false;
 }

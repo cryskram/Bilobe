@@ -21,10 +21,27 @@ function bilobePAC()
     sudo pacman -Sy base-devel make cmake
 }
 
+function bilobeYum()
+{
+    clear
+    echo "Starting Bilobe Installation Bilobe"
+    echo "Checking essentials required"
+    sudo yum groupinstall "Development Tools"
+    sudo yum install cmake
+}
+
+function bilobeDnf()
+{
+    clear
+    echo "Starting Bilobe Installation Bilobe"
+    echo "Checking essentials required"
+    sudo dnf install cmake gcc-c++ make
+}
+
 function buildBilobe() {
-    echo "Make directory build..."
+    echo "Making directory build..."
     mkdir build
-    echo "Change directory..."
+    echo "Changing directory..."
     cd build
     echo "Building Bilobe project..."
     cmake ..
@@ -41,6 +58,14 @@ elif checkPKGM pacman
 then
     bilobePAC
     buildBilobe
+elif checkPKGM dnf
+then
+    bilobeDnf
+    buildBilobe
+elif checkPKGM yum
+then
+    bilobeYum
+    buildBilobe
 else
-    echo "Need to implement the code for your OS..."
+    echo "Please install the Requirements manually and build the project once again"
 fi
