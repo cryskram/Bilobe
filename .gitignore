@@ -2,3 +2,5 @@ bilobe
 run
 build/
 .vscode/
+Bilobe-UNIX-**.sh
+Bilobe-Windows-**.exe
