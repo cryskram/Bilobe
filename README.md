@@ -15,9 +15,9 @@
 
 `git clone https://github.com/GNVageesh/Bilobe.git` <br>
 `chmod +x linstall.sh` <br>
-`./linstall.sh` or `bash linstall.sh`<br>
+`./install.sh` or `bash install.sh`<br>
 
-> **_This will install Bilobe globally on your system_**
+> **_This will run the Bilobe script installer and it will automatically install all the required application according to your system's package manager_**
 
 ## Usage
 
