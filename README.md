@@ -15,6 +15,12 @@
     - `git clone https://github.com/GNVageesh/Bilobe.git` <br>
     - `bash install.sh`<br>
 
+    - Alternatively you can download the .sh file from the Bilobe Releases page.
+    - And then run the following command to make it executable.
+    - `chmod +x /path/to/file/Bilobe-UNIX-xxx.sh`
+    - And running it by `./Bilobe-UNIX-xxx.sh`
+    - Further to access it system-wide, copy it to the bin folder by running `sudo cp /path/to/Bilobe-UNIX-xxx.sh /usr/bin/`
+
     > **_This will run the Bilobe script installer and it will automatically install all the required application according to your system's package manager and will enable bilobe command globally._**
 
 2. Windows OS
@@ -29,6 +35,8 @@
 
     - `cd /to/the/bilobe/repoFolder`<br>
     - `bash update.sh`
+
+    - Alternatively you can download the .sh file from the release page that will be updated with the new version, and follow the same steps of the alternative installation procedure 
 
     > **_This will pull the code from the repo and rebuild Bilobe with the new version._**
 
