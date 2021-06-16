@@ -1,40 +1,64 @@
 # **Bilobe[1.3.0]**
 ### A New Programming Language Made To Be Simple, Fast And Efficient
 
-![A GIF On Bilobe](preview/bi.gif)<br>
+<img src="preview/bi.gif" width="700">
 
 ![A preview of Bilobe](preview/bilobeTerminal1.png)
 ## Requirements
  - Everything is taken care by the Bilobe installer
- - On Windows, WSL or WSL2 is required to run and get the necessary files.
  - Just follow thge installation instructions.
 
 ## Installation
 
-`git clone https://github.com/GNVageesh/Bilobe.git` <br>
-`bash install.sh`<br>
+1. UNIX-Based Systems:
 
-> **_This will run the Bilobe script installer and it will automatically install all the required application according to your system's package manager and will enable bilobe command globally._**
+    - `git clone https://github.com/GNVageesh/Bilobe.git` <br>
+    - `bash install.sh`<br>
+
+    > **_This will run the Bilobe script installer and it will automatically install all the required application according to your system's package manager and will enable bilobe command globally._**
+
+2. Windows OS
+
+    
+    - On Windows, WSL or WSL2 is required to run and get the necessary files.
+    - Alternatively you can download the .exe file from Bilobe Releases Page.
 
 ## Updating Bilobe
 
-`cd /to/the/bilobe/repoFolder`<br>
-`bash update.sh`
+1. UNIX-Based Systems
 
-> **_This will pull the code from the repo and rebuild Bilobe with the new version._**
+    - `cd /to/the/bilobe/repoFolder`<br>
+    - `bash update.sh`
+
+    > **_This will pull the code from the repo and rebuild Bilobe with the new version._**
+
+2. Windows OS
+
+    - You can delete the older version of Bilobe and install the latest version, which will be released at the same time when released for UNIX Systems
 
 ## Uninstalling Bilobe
 
-`cd /to/the/bilobe/repoFolder`<br>
-`bash uninstall.sh`
+1. UNIX-Based Systems
 
-> **_This will remove bilobe completely form your system._**
+    - `cd /to/the/bilobe/repoFolder`<br>
+    - `bash uninstall.sh`
+
+    > **_This will remove bilobe completely form your system._**
+
+2. Windows OS
+
+    - You can just remove Bilobe by just deleting the .exe file that you had downloaded before
+
+## Advice for Windows OS Users
+
+**Though the Bilobe executable file is released simultaneously with the build release, you want be able to use Bilobe throughout your Windows machine, unless u dont add the .exe file to the system path. A wave to tackle this until an installer release of Bilobe is made for Windows, you can use the Windows Sub-System For Linux(WSL or WSL2), with which u can do all the setup that can be done on UNIX-Based Systems.**
 
 ## Usage
 
-Once the installation and building is done follow the steps:
+_Once the building and installation of Bilobe is done, you can follow the below instruction according to your OS:_
 
-`bilobe`
+    1. On UNIX-Based Systems you can start it from your terminal by the command `bilobe`
+    2. On Windows OS, u can start it by just running the .exe file that you have downloaded
 
 
 ## Grammar Available right now
