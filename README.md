@@ -5,11 +5,9 @@
 
 ![A preview of Bilobe](preview/bilobeTerminal1.png)
 ## Requirements
- - Any C++ compiler(MinGW/GCC, Dev C++, CLang or Visual C++).
- - `make` installed to build and install the project.
- - Any UNIX-Based OS
- - If Windows... WSL is Required to get the necessay tools.
- - Unix Based system require nothing more than `sudo apt install build-essential` to get all the necessay tools.
+ - Everything is taken care by the Bilobe installer
+ - On Windows, WSL or WSL2 is required to run and get the necessary files.
+ - Just follow thge installation instructions.
 
 ## Installation
 
