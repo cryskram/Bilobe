@@ -1,6 +1,8 @@
 # **Bilobe[1.2.0]**
 ### A New Programming Language Made To Be Simple, Fast And Efficient
 
+![A GIF On Bilobe](preview/bi.gif)
+
 ## Requirements
  - Any C++ compiler(MinGW/GCC, Dev C++, CLang or Visual C++).
  - `make` installed to build and install the project.
