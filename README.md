@@ -14,10 +14,23 @@
 ## Installation
 
 `git clone https://github.com/GNVageesh/Bilobe.git` <br>
-`chmod +x linstall.sh` <br>
-`./install.sh` or `bash install.sh`<br>
+`bash install.sh`<br>
 
-> **_This will run the Bilobe script installer and it will automatically install all the required application according to your system's package manager_**
+> **_This will run the Bilobe script installer and it will automatically install all the required application according to your system's package manager and will enable bilobe command globally._**
+
+## Updating Bilobe
+
+`cd /to/the/bilobe/repoFolder`<br>
+`bash update.sh`
+
+> **_This will pull the code from the repo and rebuild Bilobe with the new version._**
+
+## Uninstalling Bilobe
+
+`cd /to/the/bilobe/repoFolder`<br>
+`bash uninstall.sh`
+
+> **_This will remove bilobe completely form your system._**
 
 ## Usage
 
