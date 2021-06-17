@@ -1,7 +1,7 @@
 # **Bilobe[1.3.0]**
 ### A New Programming Language Made To Be Simple, Fast And Efficient
 
-<img src="preview/bi.gif" width="700">
+<img src="preview/bilobeIntro.gif" width="700">
 
 ![A preview of Bilobe](preview/bilobeTerminal1.png)
 ## Requirements

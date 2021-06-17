@@ -8,7 +8,7 @@ int precedence(char op)
         return 2;
     return 0;
 }
-int applyOp(int a, int b, char op)
+int applyOp(float a, float b, char op)
 {
     switch (op)
     {
