@@ -6,7 +6,7 @@
 ![A preview of Bilobe](preview/bilobeTerminal1.png)
 ## Requirements
  - Everything is taken care by the Bilobe installer
- - Just follow thge installation instructions.
+ - Just follow the installation instructions.
 
 ## Installation
 
