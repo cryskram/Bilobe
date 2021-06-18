@@ -8,7 +8,7 @@ int precedence(char op)
         return 2;
     return 0;
 }
-int applyOp(float a, float b, char op)
+double applyOp(float a, float b, char op)
 {
     switch (op)
     {
@@ -25,10 +25,10 @@ int applyOp(float a, float b, char op)
     }
     return 0;
 }
-int evaluate(string tokens)
+double evaluate(string tokens)
 {
     int i;
-    stack<int> values;
+    stack<double> values;
     stack<char> ops;
 
     for (i = 0; i < tokens.length(); i++)
@@ -41,7 +41,7 @@ int evaluate(string tokens)
         }
         else if (isdigit(tokens[i]))
         {
-            int val = 0;
+            double val = 0;
             while (i < tokens.length() &&
                    isdigit(tokens[i]))
             {
@@ -56,10 +56,10 @@ int evaluate(string tokens)
         {
             while (!ops.empty() && ops.top() != '(')
             {
-                int val2 = values.top();
+                double val2 = values.top();
                 values.pop();
 
-                int val1 = values.top();
+                double val1 = values.top();
                 values.pop();
 
                 char op = ops.top();
@@ -74,10 +74,10 @@ int evaluate(string tokens)
         {
             while (!ops.empty() && precedence(ops.top()) >= precedence(tokens[i]))
             {
-                int val2 = values.top();
+                double val2 = values.top();
                 values.pop();
 
-                int val1 = values.top();
+                double val1 = values.top();
                 values.pop();
 
                 char op = ops.top();
@@ -90,10 +90,10 @@ int evaluate(string tokens)
     }
     while (!ops.empty())
     {
-        int val2 = values.top();
+        double val2 = values.top();
         values.pop();
 
-        int val1 = values.top();
+        double val1 = values.top();
         values.pop();
 
         char op = ops.top();

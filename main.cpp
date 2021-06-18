@@ -5,7 +5,7 @@
 
 int main()
 {
-    std::string code, display;
+    std::string code;
 
     std::cout << introText << "\n"
               << dashes << std::endl;
@@ -17,8 +17,7 @@ int main()
 
         if (start_with(code, printPrefix) == true && end_with(code, printSuffix) == true)
         {
-            display = lnp(code);
-            std::cout << display << std::endl;
+            std::cout << lnp(code) << std::endl;
         }
 
         else if (code == helpText)
@@ -28,14 +27,12 @@ int main()
 
         else if (start_with(code, lenStringPre) && end_with(code, lenStringSuff))
         {
-            int lenString = lens(code);
-            std::cout << lenString << std::endl;
+            std::cout << lens(code) << std::endl;
         }
 
         else if (start_with(code, lenIntPre) && end_with(code, lenIntSuff))
         {
-            int lenIntLength = leni(code);
-            std::cout << lenIntLength << std::endl;
+            std::cout << leni(code) << std::endl;
         }
 
         else if (start_with(code, comment) || start_with(code, (comment + comment)))
@@ -45,8 +42,7 @@ int main()
 
         else if (isNumber(code))
         {
-            display = std::to_string(evaluate(code));
-            std::cout << display << std::endl;
+            std::cout << evaluate(code) << std::endl;
         }
 
         else if (code == " " || code == "")
