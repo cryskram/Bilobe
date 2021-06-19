@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
-using namespace std;
+#include <iostream>
+
 int precedence(char op)
 {
     if (op == '+' || op == '-')
@@ -25,11 +26,11 @@ double applyOp(float a, float b, char op)
     }
     return 0;
 }
-double evaluate(string tokens)
+double evaluate(std::string tokens)
 {
     int i;
-    stack<double> values;
-    stack<char> ops;
+    std::stack<double> values;
+    std::stack<char> ops;
 
     for (i = 0; i < tokens.length(); i++)
     {
@@ -103,16 +104,3 @@ double evaluate(string tokens)
     }
     return values.top();
 }
-
-// int main()
-// {
-//     std::string input;
-
-//     while (true)
-//     {
-//         cout << ">>> ";
-//         std::getline(std::cin, input);
-
-//         cout << evaluate(input) << endl;
-//     }
-// }
