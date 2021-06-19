@@ -6,7 +6,8 @@ checkPKGM()
     [ -x "$(which $1)" ]
 }
 
-function bilobeAPT() {
+function bilobeAPT() 
+{
     clear
     echo "Starting Bilobe Installation Bilobe"
     echo "Checking essentials required"
