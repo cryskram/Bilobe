@@ -2,7 +2,7 @@
 #include <vector>
 
 /* Global Vars */
-std::string version = "1.3.0";
+std::string version = "1.4.0";
 
 // Help Text
 std::string introText = "Bilobe[" + version + "] :-: A Programming Language Made Simple To Code\nType !syn to get the available grammar in Bilobe[" + version + "]";
@@ -22,6 +22,7 @@ std::string lenInt = "leni";
 std::string lenIntPre = "leni(";
 std::string lenIntSuff = ")";
 std::string comment = "#";
+std::string extension = ".bi";
 
 // Errors
 std::string printNotEnd = "[lnp() Syntax Voilation...]\nThe lnp() syntax should end with \")";

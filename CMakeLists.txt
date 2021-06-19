@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.0)
-project(bilobe VERSION 1.3.0)
+project(bilobe VERSION 1.4.0)
 
 include_directories(include)
 
