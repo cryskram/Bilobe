@@ -5,10 +5,18 @@ void mainHeart(std::string value)
 {
     while (!value.empty())
     {
-        if (start_with(value, printPrefix) == true && end_with(value, printSuffix) == true)
+        if (start_with(value, printPrefixNum) == true && end_with(value, printSuffixNum) == true)
         {
-            std::cout << lnp(value) << std::endl;
-            break;
+            if (start_with(value, printPrefixNum + "\"") && end_with(value, "\"" + printSuffixNum))
+            {
+                std::cout << lnp(value, printPrefix, printSuffix) << std::endl;
+                break;
+            }
+            else
+            {
+                std::cout << lnpnum(value, printPrefixNum, printSuffixNum) << std::endl;
+                break;
+            }
         }
 
         else if (value == helpText)

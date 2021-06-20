@@ -22,14 +22,24 @@ bool end_with(std::string fullString, std::string end)
     return false;
 }
 
-std::string lnp(std::string input)
+std::string lnp(std::string input, std::string prefix, std::string suffix)
 {
     int strLength = input.length();
-    int printPrefixLength = printPrefix.length();
-    int printSuffixLength = printSuffix.length();
+    int printPrefixLength = prefix.length();
+    int printSuffixLength = suffix.length();
     int mainOutLength = strLength - printPrefixLength - printSuffixLength;
     std::string output = input.substr(printPrefixLength, mainOutLength);
     return output;
+}
+
+int lnpnum(std::string input, std::string prefix, std::string suffix)
+{
+    int strLength = input.length();
+    int printPrefixLength = prefix.length();
+    int printSuffixLength = suffix.length();
+    int mainOutLength = strLength - printPrefixLength - printSuffixLength;
+    std::string output = input.substr(printPrefixLength, mainOutLength);
+    return std::stoi(output);
 }
 
 int lens(std::string input)
