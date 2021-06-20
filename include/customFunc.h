@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 #include "calculations.h"
 #include "vars.h"
 
@@ -32,14 +33,14 @@ std::string lnp(std::string input, std::string prefix, std::string suffix)
     return output;
 }
 
-int lnpnum(std::string input, std::string prefix, std::string suffix)
+long long lnpnum(std::string input, std::string prefix, std::string suffix)
 {
     int strLength = input.length();
     int printPrefixLength = prefix.length();
     int printSuffixLength = suffix.length();
     int mainOutLength = strLength - printPrefixLength - printSuffixLength;
     std::string output = input.substr(printPrefixLength, mainOutLength);
-    return std::stoi(output);
+    return std::atoll(output.c_str());
 }
 
 int lens(std::string input)

@@ -9,7 +9,7 @@ int precedence(char op)
         return 2;
     return 0;
 }
-double applyOp(float a, float b, char op)
+long double applyOp(float a, float b, char op)
 {
     switch (op)
     {
@@ -26,10 +26,10 @@ double applyOp(float a, float b, char op)
     }
     return 0;
 }
-double evaluate(std::string tokens)
+long double evaluate(std::string tokens)
 {
     int i;
-    std::stack<double> values;
+    std::stack<long double> values;
     std::stack<char> ops;
 
     for (i = 0; i < tokens.length(); i++)
@@ -42,7 +42,7 @@ double evaluate(std::string tokens)
         }
         else if (isdigit(tokens[i]))
         {
-            double val = 0;
+            long double val = 0;
             while (i < tokens.length() &&
                    isdigit(tokens[i]))
             {
@@ -57,10 +57,10 @@ double evaluate(std::string tokens)
         {
             while (!ops.empty() && ops.top() != '(')
             {
-                double val2 = values.top();
+                long double val2 = values.top();
                 values.pop();
 
-                double val1 = values.top();
+                long double val1 = values.top();
                 values.pop();
 
                 char op = ops.top();
@@ -75,10 +75,10 @@ double evaluate(std::string tokens)
         {
             while (!ops.empty() && precedence(ops.top()) >= precedence(tokens[i]))
             {
-                double val2 = values.top();
+                long double val2 = values.top();
                 values.pop();
 
-                double val1 = values.top();
+                long double val1 = values.top();
                 values.pop();
 
                 char op = ops.top();
@@ -91,10 +91,10 @@ double evaluate(std::string tokens)
     }
     while (!ops.empty())
     {
-        double val2 = values.top();
+        long double val2 = values.top();
         values.pop();
 
-        double val1 = values.top();
+        long double val1 = values.top();
         values.pop();
 
         char op = ops.top();
