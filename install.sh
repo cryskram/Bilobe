@@ -19,7 +19,7 @@ function bilobePAC()
     clear
     echo "Starting Bilobe Installation Bilobe"
     echo "Checking essentials required"
-    sudo pacman -Sy base-devel make cmake
+    sudo pacman -Sy make cmake base-devel
 }
 
 function bilobeYum()

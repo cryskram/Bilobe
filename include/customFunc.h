@@ -40,7 +40,15 @@ long long lnpnum(std::string input, std::string prefix, std::string suffix)
     int printSuffixLength = suffix.length();
     int mainOutLength = strLength - printPrefixLength - printSuffixLength;
     std::string output = input.substr(printPrefixLength, mainOutLength);
-    return std::atoll(output.c_str());
+
+    if (std::atoll(output.c_str()) > LONG_LONG_MAX)
+    {
+        return 0;
+    }
+    else
+    {
+        return std::atoll(output.c_str());
+    }
 }
 
 int lens(std::string input)
