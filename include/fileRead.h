@@ -10,7 +10,6 @@ void demoRead(std::string filename)
         std::string oline;
         std::fstream file;
         file.open(filename);
-        char space = '\t';
 
         while (std::getline(file, oline))
         {

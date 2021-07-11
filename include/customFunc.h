@@ -73,7 +73,7 @@ int leni(std::string input)
 
 bool isNumber(std::string s)
 {
-    for (int i = 0; i < s.length(); i++)
+    for (unsigned i = 0; i < s.length(); i++)
     {
         if (std::isdigit(s[i]) == true)
         {

@@ -28,7 +28,7 @@ long double applyOp(float a, float b, char op)
 }
 long double evaluate(std::string tokens)
 {
-    int i;
+    unsigned i;
     std::stack<long double> values;
     std::stack<char> ops;
 
