@@ -37,9 +37,9 @@ std::string missingCloseBrac = "[Unclosed Error]...\nPlease add a closing bracke
 std::string isLen = "Did you mean leni() or lens()...";
 
 // Help var
-std::string helpVar = "| Grammsrs |       Examples              |     Result      |            Description               |\n"
+std::string helpVar = "| Grammars |       Examples              |     Result      |            Description               |\n"
                       "| -------- | ------------------------    | --------------- | ------------------------------------ |\n"
-                      "| lnp()    | lnp(\" I am Bilobe \")        |   I am Bilobe   | Prints the text                      |\n"
+                      "| lnp()    | lnp(\"I am Bilobe\")          |   I am Bilobe   | Prints the text                      |\n"
                       "| lens()   | lens(\"Bilobe\")              |       6         | Prints the length of a String        |\n"
                       "| leni()   | lens(89243)                 |       5         | Prints the length of a number        |\n"
                       "| exit()   | exit(bi)                    |                 | Exit Bilobe from the console         |\n"

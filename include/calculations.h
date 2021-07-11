@@ -1,5 +1,7 @@
-#include <bits/stdc++.h>
+#include <cmath>
 #include <iostream>
+#include <cmath>
+#include <stack>
 
 int precedence(char op)
 {
@@ -9,7 +11,7 @@ int precedence(char op)
         return 2;
     return 0;
 }
-long double applyOp(float a, float b, char op)
+long double applyOp(long double a, long double b, char op)
 {
     switch (op)
     {
@@ -22,7 +24,7 @@ long double applyOp(float a, float b, char op)
     case '/':
         return a / b;
     case '^':
-        return pow(a, b);
+        return std::pow(a, b);
     }
     return 0;
 }

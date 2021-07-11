@@ -2,21 +2,27 @@
 #include <fstream>
 #include "heart.h"
 
-void demoRead(std::string filename)
+void readFromFile(const std::string& filename)
 {
+    std::ifstream iFile;
+    iFile.open(filename);
 
-    if (end_with(filename, extension))
+    if (iFile)
     {
-        std::string oline;
-        std::fstream file;
-        file.open(filename);
-
-        while (std::getline(file, oline))
+        if (end_with(filename, extension))
         {
-            mainHeart(oline);
-        }
+            std::string oline;
+            std::fstream file;
+            file.open(filename);
 
-        file.close();
+            while (std::getline(file, oline))
+            {
+                // std::cout << oline << std::endl;
+                mainHeart(oline);
+            }
+
+            file.close();
+        }
     }
 
     else

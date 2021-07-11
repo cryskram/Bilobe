@@ -1,11 +1,11 @@
 #include <iostream>
 #include "customFunc.h"
 
-void mainHeart(std::string value)
+void mainHeart(const std::string& value)
 {
     while (!value.empty())
     {
-        if (start_with(value, printPrefixNum) == true && end_with(value, printSuffixNum) == true)
+        if (start_with(value, printPrefixNum) && end_with(value, printSuffixNum))
         {
             if (start_with(value, printPrefixNum + "\"") && end_with(value, "\"" + printSuffixNum))
             {
@@ -48,7 +48,7 @@ void mainHeart(std::string value)
             break;
         }
 
-        else if (value == " " || value == "")
+        else if (value == " " || value.empty())
         {
             continue;
         }

@@ -1,9 +1,10 @@
 #include <iostream>
 #include <string>
+#include <climits>
 #include "calculations.h"
 #include "vars.h"
 
-bool start_with(std::string main, std::string part)
+bool start_with(const std::string& main, const std::string& part)
 {
     if (main.find(part) == 0)
     {
@@ -13,7 +14,7 @@ bool start_with(std::string main, std::string part)
     return false;
 }
 
-bool end_with(std::string fullString, std::string end)
+bool end_with(const std::string& fullString, const std::string& end)
 {
     if (fullString.length() >= end.length())
     {
@@ -23,7 +24,7 @@ bool end_with(std::string fullString, std::string end)
     return false;
 }
 
-std::string lnp(std::string input, std::string prefix, std::string suffix)
+std::string lnp(const std::string& input, const std::string& prefix, const std::string& suffix)
 {
     int strLength = input.length();
     int printPrefixLength = prefix.length();
@@ -33,7 +34,7 @@ std::string lnp(std::string input, std::string prefix, std::string suffix)
     return output;
 }
 
-long long lnpnum(std::string input, std::string prefix, std::string suffix)
+long long lnpnum(const std::string& input, const std::string& prefix, const std::string& suffix)
 {
     int strLength = input.length();
     int printPrefixLength = prefix.length();
@@ -51,7 +52,7 @@ long long lnpnum(std::string input, std::string prefix, std::string suffix)
     }
 }
 
-int lens(std::string input)
+int lens(const std::string& input)
 {
     int strLength = input.length();
     int prefixLength = lenStringPre.length();
