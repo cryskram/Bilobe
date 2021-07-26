@@ -74,7 +74,7 @@ For a idea on the content of the file, check out the `sample.bi` file in the rep
 
 ## Advice for Windows OS Users
 
-**Though the Bilobe executable file is released simultaneously with the build release, you want be able to use Bilobe throughout your Windows machine, unless u dont add the .exe file to the system path. A wave to tackle this until an installer release of Bilobe is made for Windows, you can use the Windows Sub-System For Linux(WSL or WSL2), with which u can do all the setup that can be done on UNIX-Based Systems.**
+**Though the Bilobe executable file is released simultaneously with the build release, you wont be able to use Bilobe throughout your Windows machine, unless u dont add the .exe file to the system path. A wave to tackle this until an installer release of Bilobe is made for Windows, you can use the Windows Sub-System For Linux(WSL or WSL2), with which u can do all the setup that can be done on UNIX-Based Systems.**
 
 ## Grammar Available right now
 
