@@ -3,6 +3,7 @@
 #include <cmath>
 #include <stack>
 
+// file to conduct math
 int precedence(char op)
 {
     if (op == '+' || op == '-')

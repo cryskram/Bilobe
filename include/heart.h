@@ -1,7 +1,7 @@
 #include <iostream>
 #include "customFunc.h"
 
-void mainHeart(const std::string& value)
+void mainHeart(const std::string &value)
 {
     while (!value.empty())
     {

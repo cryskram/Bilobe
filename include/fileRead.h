@@ -2,7 +2,7 @@
 #include <fstream>
 #include "heart.h"
 
-void readFromFile(const std::string& filename)
+void readFromFile(const std::string &filename)
 {
     std::ifstream iFile;
     iFile.open(filename);
